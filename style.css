@@ -1,0 +1,172 @@
+/* Slideshow container */
+
+body {
+  background-color: #85C785; 
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Chau Philomene One', sans-serif;
+  text-align: center;
+  margin-top: 5%;
+}
+
+p {
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 15px;
+  color: white; 
+  margin-bottom: 10%;
+}
+
+a:link {
+  color:  #54A754;
+  text-decoration: none;
+}
+
+a:visited {
+  color:  #54A754;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active { 
+  text-decoration: underline;
+  color: #54A754;
+} 
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 150px;
+  position:absolute;
+  padding: 10px;
+  width: auto;
+  color: white;
+  background-color: #2D882D;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  background-color:#2D882D; 
+  font-size: 25px;
+  font-family: 'Palanquin', sans-serif; 
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #54A754;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 5%;
+}
+.second {
+  display:none;
+}
+.first {
+  display:block;
+}
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {/*
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;*/
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}*/
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.sidebar {
+  background-color: #2D882D;
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.menutext a:link {
+  color: #54A754;
+}
+
+.menutext a:hover { 
+  font-weight: bold;
+  color: #54A754;
+ }
+
+*{
+  margin:0;
+  padding: 0;
+}
+.main {
+  width: 85% ;
+  height: 100%;
+  background-color:#85C785;
+}
+
+.company {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#BTHLogo {
+  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Kontakt {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
